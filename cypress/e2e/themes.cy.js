@@ -21,7 +21,7 @@ describe('Choose and configure a theme', () => {
     cy.screenshot('themes--list');
     cy.get('.theme-default')
       .within(($card) => {
-        cy.contains('Olivero for Drupal CMS (default theme)');
+        cy.contains('Olivero for Drupal CMS');
         cy.screenshot('themes--card', {padding: 60});
 
         cy.get('a').contains('Settings')

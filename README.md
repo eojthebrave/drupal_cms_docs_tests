@@ -8,20 +8,27 @@ This project consists of the configuration necessary to set up a DDEV (Docker) e
 - Clone this repository
 - Execute `ddev start` from the root directory
 - Followed by `ddev composer install` (This will install Drupal CMS)
+- Then `ddev npm install`
 
 ## Run the tests
 
-For now, just run the tests locally. Maybe eventually we can wire it up with GitLab CI. ?\_(?)_/?
+For now, just run the tests locally. Maybe eventually we can wire it up with GitLab CI on Drupal.org. ?\_(?)_/?
 
 Screenshot generation currently works best with Firefox.
 
-```
+```shell
 ddev exec npx cypress run --browser=firefox
 ```
 
 Screenshots will be saved in _cypress/screenshots/_.
 
 Alternatively you can use the Cypress UI to run tests, and watch them execute, by visiting https://drupal-cms-docs-tests.ddev.site:6081/vnc.html.
+
+Start the cypress UI:
+
+```shell
+ddev exec npx cypress open --config watchForFileChanges=false
+```
 
 ## Additional information
 

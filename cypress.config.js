@@ -20,6 +20,8 @@ module.exports = defineConfig({
       'cypress/e2e/getting-around.cy.js',
       'cypress/e2e/enable-module.cy.js',
       'cypress/e2e/themes.cy.js',
+      'cypress/e2e/basic-page.cy.js',
+      'cypress/e2e/privacy.cy.js',
       'cypress/e2e/ai-recipe.cy.js',
       'cypress/e2e/**/*.cy.js',
     ],

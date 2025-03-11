@@ -11,6 +11,7 @@ describe('The Drupal CMS installer', () => {
     cy.contains('Blog').click();
     cy.contains('Events').click();
     cy.contains('News').click();
+    cy.contains('Person Profiles').click();
     cy.get('.cms-installer__main')
       .screenshot('installer--one', {padding: 60});
 

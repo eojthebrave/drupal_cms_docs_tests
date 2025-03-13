@@ -98,6 +98,7 @@ describe('Create basic pages', () => {
 
     cy.drupalLogout();
     cy.visit('/about');
+
     cy.screenshot('basic-page--about-page');
 
     // Now change the layout.

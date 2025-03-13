@@ -18,7 +18,7 @@ describe('Adding Functionality With Smart Defaults', () => {
     cy.visit('/admin/dashboard');
     cy.get('.admin-toolbar').contains('a', 'Extend')
       .click();
-    cy.get('.tabs a').contains('Recipes').click();
+    cy.get('.tabs a').contains('Recommended').click();
 
     // Wait a few seconds for the PB images to load.
     cy.wait(2000);

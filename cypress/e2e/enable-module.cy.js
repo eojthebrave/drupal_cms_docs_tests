@@ -17,7 +17,7 @@ describe('Enabling Functionality With Modules', () => {
     cy.get('.admin-toolbar').contains('a', 'Extend')
       .click();
     cy.contains('.tabs a', 'List');
-    cy.contains('.tabs a', 'Recipes');
+    cy.contains('.tabs a', 'Recommended');
     cy.screenshot('extend--overview', { capture: 'viewport' });
 
     cy.get('label').contains('Comment').click();

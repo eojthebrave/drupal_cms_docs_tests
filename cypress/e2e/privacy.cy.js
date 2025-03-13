@@ -104,6 +104,12 @@ describe('The Drupal CMS privacy policy page', () => {
     // We don't need any screenshots of this right now, but these steps verify
     // that the steps in the documentation are accurate.
     cy.visit('/');
+
+    // Accept cookies so this doesn't show in screenshots.
+    cy.get('#klaro-cookie-notice button')
+      .contains('Accept')
+      .click();
+
     // First verify the privacy link doesn't exist for anon users.
     cy.get('footer a').contains('Privacy policy').should('not.exist');
 
